@@ -33,6 +33,7 @@ export default StyleSheet.create({
   },
   tooltipText: {
     color: '#FFFFFF',
+    lineHeight: 20,
   },
    tooltipTitle: {
     color: '#FFFFFF',
@@ -67,6 +68,7 @@ export default StyleSheet.create({
   },
   bottomBar: {
     marginTop: 10,
+    marginBottom: 15,
     flexDirection: 'row',
     justifyContent: 'flex-end',
   },
