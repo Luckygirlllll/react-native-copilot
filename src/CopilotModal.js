@@ -94,30 +94,30 @@ class CopilotModal extends Component<Props, State> {
     if (verticalPosition === 'bottom') {
       tooltip.top = obj.top + obj.height + MARGIN;
       arrow.borderBottomColor = "#e8436f";
-      arrow.top = tooltip.top - (MARGIN + 30);
-      arrow.borderBottomWidth=30;
-      arrow.borderLeftWidth= 30;
-      arrow.borderRightWidth= 30;
+      arrow.top = tooltip.top - (MARGIN + 15);
+      arrow.borderBottomWidth=15;
+      arrow.borderLeftWidth= 15;
+      arrow.borderRightWidth= 15;
     } else {
       tooltip.bottom = layout.height - (obj.top + MARGIN);
       arrow.borderTopColor = "#e8436f";
-      arrow.bottom = tooltip.bottom - (MARGIN + 30);
-      arrow.borderTopWidth=30;
-      arrow.borderLeftWidth= 30;
-      arrow.borderRightWidth= 30;
+      arrow.bottom = tooltip.bottom - (MARGIN + 15);
+      arrow.borderTopWidth=15;
+      arrow.borderLeftWidth= 15;
+      arrow.borderRightWidth= 15;
     }
 
     if (horizontalPosition === 'left') {
       tooltip.right = Math.max(layout.width - (obj.left + obj.width), 0);
       tooltip.right = tooltip.right === 0 ? tooltip.right + MARGIN : tooltip.right;
       tooltip.maxWidth = layout.width - tooltip.right - MARGIN;
-      arrow.right = tooltip.right + MARGIN-20;
+      arrow.right = tooltip.right + MARGIN-15;
 
     } else {
       tooltip.left = Math.max(obj.left, 0);
       tooltip.left = tooltip.left === 0 ? tooltip.left + MARGIN : tooltip.left;
       tooltip.maxWidth = layout.width - tooltip.left - MARGIN;
-      arrow.left = tooltip.left + MARGIN-20;
+      arrow.left = tooltip.left + MARGIN-15;
     }
 
     const animate = {
