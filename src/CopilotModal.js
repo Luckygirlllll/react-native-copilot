@@ -94,14 +94,14 @@ class CopilotModal extends Component<Props, State> {
     if (verticalPosition === 'bottom') {
       tooltip.top = obj.top + obj.height + MARGIN;
       arrow.borderBottomColor = "#e8436f";
-      arrow.top = tooltip.top - (MARGIN + 10);
+      arrow.top = tooltip.top - (MARGIN + 5);
       arrow.borderBottomWidth=15;
       arrow.borderLeftWidth= 15;
       arrow.borderRightWidth= 15;
     } else {
       tooltip.bottom = layout.height - (obj.top + MARGIN);
       arrow.borderTopColor = "#e8436f";
-      arrow.bottom = tooltip.bottom - (MARGIN + 10);
+      arrow.bottom = tooltip.bottom - (MARGIN + 5);
       arrow.borderTopWidth=15;
       arrow.borderLeftWidth= 15;
       arrow.borderRightWidth= 15;
@@ -111,13 +111,13 @@ class CopilotModal extends Component<Props, State> {
       tooltip.right = Math.max(layout.width - (obj.left + obj.width), 0);
       tooltip.right = tooltip.right === 0 ? tooltip.right + MARGIN : tooltip.right;
       tooltip.maxWidth = layout.width - tooltip.right - MARGIN;
-      arrow.right = tooltip.right + MARGIN-5;
+      arrow.right = tooltip.right + MARGIN;
 
     } else {
       tooltip.left = Math.max(obj.left, 0);
       tooltip.left = tooltip.left === 0 ? tooltip.left + MARGIN : tooltip.left;
       tooltip.maxWidth = layout.width - tooltip.left - MARGIN;
-      arrow.left = tooltip.left + MARGIN-5;
+      arrow.left = tooltip.left + MARGIN;
     }
 
     const animate = {
