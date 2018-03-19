@@ -29,10 +29,10 @@ type State = {
 
 class CopilotModal extends Component<Props, State> {
   static defaultProps = {
-    nextButton: <Button>Next</Button>,
-    prevButton: <Button>Previous</Button>,
-    skipButton: <Button>Stop</Button>,
-    finishButton: <Button>Finish</Button>,
+    nextButton: <Button>NEXT</Button>,
+    prevButton: <Button>PREVIOUS</Button>,
+    skipButton: <Button>SKIP</Button>,
+    finishButton: <Button>FINISH</Button>,
   };
 
   state = {

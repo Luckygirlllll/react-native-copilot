@@ -14,6 +14,7 @@ export default StyleSheet.create({
     top: 0,
     right: 0,
     bottom: 0,
+    borderRadius: 0,
     zIndex: ZINDEX,
   },
   arrow: {
@@ -28,6 +29,7 @@ export default StyleSheet.create({
     backgroundColor: "#e8436f",
     borderRadius: 3,
     overflow: 'hidden',
+    borderRadius: 10,
   },
   tooltipText: {
     color: '#FFFFFF',
@@ -56,6 +58,7 @@ export default StyleSheet.create({
   },
   buttonText: {
     color: '#FFFFFF',
+    fontWeight: 'bold',
   },
   bottomBar: {
     marginTop: 10,
