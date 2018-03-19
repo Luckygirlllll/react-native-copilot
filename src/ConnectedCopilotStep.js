@@ -6,6 +6,7 @@ import type { CopilotContext } from './types';
 type Props = {
   name: string,
   text: string,
+  title: string,
   order: number,
   _copilot: CopilotContext,
   children: React$Element
@@ -16,6 +17,7 @@ class ConnectedCopilotStep extends Component<Props> {
     this.props._copilot.registerStep({
       name: this.props.name,
       text: this.props.text,
+      title: this.props.title,
       order: this.props.order,
       target: this,
       wrapper: this.wrapper,

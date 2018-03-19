@@ -192,6 +192,9 @@ class CopilotModal extends Component<Props, State> {
         <Animated.View style={[styles.arrow, this.state.arrow]} />
         <Animated.View style={[styles.tooltip, this.state.tooltip]}>
           <View style={{ flex: 1 }}>
+            <Text style={styles.tooltipTitle}>{this.props.currentStep.title}</Text>
+          </View>
+          <View style={{ flex: 1 }}>
             <Text style={styles.tooltipText}>{this.props.currentStep.text}</Text>
           </View>
           <View style={[styles.bottomBar]}>

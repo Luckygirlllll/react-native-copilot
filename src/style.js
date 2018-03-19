@@ -34,6 +34,11 @@ export default StyleSheet.create({
   tooltipText: {
     color: '#FFFFFF',
   },
+   tooltipTitle: {
+    color: '#FFFFFF',
+    fontWeight:'bold',
+    marginBottom: 15,
+  },
   stepNumber: {
     position: 'absolute',
     width: STEP_NUMBER_DIAMETER,
